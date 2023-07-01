@@ -1,0 +1,10 @@
+apiVersion: v2
+name: rancher
+description: deploy rancher
+type: application
+version: 0.1.0
+
+dependencies:
+  - name: rancher
+    repository: https://releases.rancher.com/server-charts/latest
+    version: 2.7.5

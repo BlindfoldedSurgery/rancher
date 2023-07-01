@@ -1,0 +1,19 @@
+namespace: cattle-system
+
+ingress:
+  hosts:
+    - name: k8s.carstens.tech
+  secret: tls-rancher
+  issuer: letsencrypt-issuer
+  name: rancher
+
+service:
+  name: rancher
+  port: 80
+
+rancher:
+  hostname: k8s.carstens.tech
+  ingress:
+    # the current (2.7.5) rancher ingress template is bad configuration wise
+    enabled: false
+  global.cattle.psp.enabled: false
