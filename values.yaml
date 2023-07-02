@@ -17,3 +17,4 @@ rancher:
     # the current (2.7.5) rancher ingress template is bad configuration wise
     enabled: false
   global.cattle.psp.enabled: false
+  replicas: 2
