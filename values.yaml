@@ -2,7 +2,7 @@ namespace: cattle-system
 
 ingress:
   hosts:
-    - name: k8s.carstens.tech
+    - name: k8s.woog.chat
   secret: tls-rancher-ingress
   issuer: letsencrypt-issuer
   name: rancher
