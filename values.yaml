@@ -2,7 +2,7 @@ namespace: cattle-system
 
 ingress:
   hosts:
-    - name: k8s.woog.chat
+    - name: k8s.blindfolded.surgery
   secret: tls-rancher-ingress
   issuer: letsencrypt-issuer
   name: rancher
@@ -12,7 +12,7 @@ service:
   port: 80
 
 rancher:
-  hostname: k8s.carstens.tech
+  hostname: k8s.blindfolded.surgery
   ingress:
     # the current (2.7.5) rancher ingress template is bad configuration wise
     enabled: false
