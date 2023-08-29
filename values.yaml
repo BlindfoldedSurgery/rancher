@@ -26,7 +26,7 @@ github:
   - github_user://7738181 # torbencarstens
   - github_team://2938789 # BlindfoldedSurgery Owners
   clientSecret:
-    name: cloudflare-api-token-secret
+    name: githubconfig-clientsecret
     secretStoreName: mgmt-prod
     data:
     - secretKey: clientsecret
