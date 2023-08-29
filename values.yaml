@@ -18,3 +18,17 @@ rancher:
     enabled: false
   global.cattle.psp.enabled: false
   replicas: 2
+
+github:
+  namespace: cattle-global-data
+  clientId: 92e42062c2b76169f39c
+  allowedPrincipalIds:
+  - github_user://7738181 # torbencarstens
+  - github_team://2938789 # BlindfoldedSurgery Owners
+  clientSecret:
+    name: cloudflare-api-token-secret
+    secretStoreName: mgmt-prod
+    data:
+    - secretKey: clientsecret
+      remoteRef:
+        key: RANCHER_GITHUB_CLIENT_SECRET
