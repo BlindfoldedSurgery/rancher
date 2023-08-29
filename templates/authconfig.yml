@@ -6,7 +6,7 @@ metadata:
 accessMode: required
 allowedPrincipalIds:
 {{ .Values.github.allowedPrincipalIds | toYaml }}
-clientId: 
+clientId: {{ .Values.github.clientId }}
 clientSecret: {{ .Values.github.namespace }}:{{ .Values.github.clientSecret.name }}
 enabled: true
 hostname: github.com
