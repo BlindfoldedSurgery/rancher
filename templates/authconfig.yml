@@ -1,0 +1,14 @@
+apiVersion: management.cattle.io/v3
+kind: AuthConfig
+metadata:
+  name: github
+  namespace: {{ .Values.github.namespace }}
+accessMode: required
+allowedPrincipalIds:
+{{ .Values.github.allowedPrincipalIds | toYaml }}
+clientId: 
+clientSecret: {{ .Values.github.namespace }}:{{ .Values.github.clientSecret.name }}
+enabled: true
+hostname: github.com
+tls: true
+type: githubConfig
